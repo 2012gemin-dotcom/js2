@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="az" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperNova | Premium Tech Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ANNOUNCEMENT BAR -->
+    <div class="announcement-bar">
+        <div class="container flex-row">
+            <p>⚡ QAYNAR ENDİRİMLƏR! Promo kod: <strong>SUPER30</strong> ilə 30% xüsusi endirim!</p>
+            <div class="countdown-wrapper">
+                <span>Bitməsinə qaldı: </span>
+                <span id="deal-timer">00d 00saat 00dək 00san</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOP BAR -->
+    <div class="top-bar">
+        <div class="container flex-row">
+            <div class="top-bar-left">
+                <span><i class="fa-solid fa-phone"></i> +994 (12) 555-00-99</span>
+                <span><i class="fa-solid fa-envelope"></i> enterprise@supernova.az</span>
+            </div>
+            <div class="top-bar-right">
+                <div class="currency-select">
+                    <select id="currency-picker">
+                        <option value="AZN">AZN (₼)</option>
+                        <option value="USD">USD ($)</option>
+                        <option value="EUR">EUR (€)</option>
+                    </select>
+                </div>
+                <button id="theme-toggle-btn" class="icon-btn-simple" title="Rejimi Dəyiş">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN HEADER -->
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="#" class="logo">Byte<span>Core</span><small>.az</small></a>
+            
+            <div class="search-bar-wrapper">
+                <div class="search-input-group">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" id="live-search-input" placeholder="Məhsul, marka və ya kateqoriya axtar... (Axtarış üçün '/' bas)">
+                    <button type="button" id="clear-search-btn" class="clear-btn hidden"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+            </div>
+
+            <div class="header-actions">
+                <button class="action-btn" id="compare-btn" title="Müqayisə">
+                    <i class="fa-solid fa-arrows-rotate"></i>
+                    <span class="badge" id="compare-count">0</span>
+                </button>
+                <button class="action-btn" id="wishlist-btn" title="Sevimlilər">
+                    <i class="fa-regular fa-heart"></i>
+                    <span class="badge" id="wishlist-count">0</span>
+                </button>
+                <button class="action-btn" id="cart-btn" title="Səbət">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="badge" id="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav class="main-nav">
+        <div class="container nav-container">
+            <div class="all-departments">
+                <button class="dept-toggle" id="dept-menu-btn">
+                    <i class="fa-solid fa-bars"></i> Bütün Kateqoriyalar <i class="fa-solid fa-chevron-down arrow"></i>
+                </button>
+                <ul class="dept-menu hidden" id="dept-menu-list">
+                    <li><a href="#" class="nav-cat-link" data-cat="laptop"><i class="fa-solid fa-laptop"></i> Noutbuklar & PC</a></li>
+                    <li><a href="#" class="nav-cat-link" data-cat="phone"><i class="fa-solid fa-mobile-screen-button"></i> Smartfonlar</a></li>
+                    <li><a href="#" class="nav-cat-link" data-cat="audio"><i class="fa-solid fa-headphones"></i> Səs Avadanlıqları</a></li>
+                    <li><a href="#" class="nav-cat-link" data-cat="wearable"><i class="fa-solid fa-stopwatch"></i> Ağıllı Qadcetlər</a></li>
+                    <li><a href="#" class="nav-cat-link" data-cat="camera"><i class="fa-solid fa-camera"></i> Foto & Video</a></li>
+                </ul>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Ana Səhifə</a></li>
+                <li><a href="#products-section">Məhsullar Kataloqu</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#footer">Əlaqə</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO SLIDER SECTION -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-slider">
+                <div class="slide active">
+                    <div class="slide-content">
+                        <span class="sub-title">YENİ NƏSİL İNNOVASİYA</span>
+                        <h1>Apple MacBook Pro M3 Max</h1>
+                        <p>Maksimal güc, misilsiz batareya ömrü və möhtəşəm Liquid Retina XDR displey.</p>
+                        <a href="#products-section" class="btn-primary">İndi kəşf et <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div class="slide-image">
+                        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&q=80" alt="MacBook Pro">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATALOG SECTION -->
+    <section class="products-section container" id="products-section">
+        <div class="section-title-wrap">
+            <h2>Məhsul Kataloqu</h2>
+            <span id="product-count-display">0 Məhsul tapıldı</span>
+        </div>
+
+        <div class="catalog-layout">
+            <!-- SIDEBAR FILTERS -->
+            <aside class="filter-sidebar">
+                <div class="filter-card">
+                    <h3><i class="fa-solid fa-filter"></i> Filtrlər</h3>
+                    
+                    <div class="filter-group">
+                        <label>Kateqoriyalar</label>
+                        <div class="category-filter-list" id="category-filters">
+                            <button class="cat-filter-btn active" data-cat="all">Bütün Kateqoriyalar</button>
+                            <button class="cat-filter-btn" data-cat="laptop">Noutbuklar & PC</button>
+                            <button class="cat-filter-btn" data-cat="phone">Smartfonlar</button>
+                            <button class="cat-filter-btn" data-cat="audio">Səs Sistemləri</button>
+                            <button class="cat-filter-btn" data-cat="wearable">Ağıllı Cihazlar</button>
+                            <button class="cat-filter-btn" data-cat="camera">Foto & Video</button>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <label>Qiymət Aralığı (<span class="currency-symbol">AZN</span>)</label>
+                        <div class="price-slider-wrap">
+                            <input type="range" id="price-range" min="0" max="4000" step="50" value="4000">
+                            <div class="price-values">
+                                <span>0</span>
+                                <span id="price-range-val">4000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <label class="checkbox-container">
+                            <input type="checkbox" id="stock-only-checkbox"> Yalnız anbardakılar
+                        </label>
+                    </div>
+
+                    <button class="btn-reset-filters" id="reset-filters-btn"><i class="fa-solid fa-rotate-left"></i> Sıfırla</button>
+                </div>
+            </aside>
+
+            <!-- PRODUCTS GRID WRAPPER -->
+            <main class="products-main">
+                <div class="sorting-bar">
+                    <label for="sort-select">Sıralama: </label>
+                    <select id="sort-select">
+                        <option value="featured">Seçilmişlər</option>
+                        <option value="price-low">Qiymət: Ucuzdan Baha</option>
+                        <option value="price-high">Qiymət: Bahadan Ucuza</option>
+                        <option value="rating">Reytinqə görə</option>
+                    </select>
+                </div>
+
+                <div class="products-grid" id="products-grid"></div>
+            </main>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="faq-section container" id="faq">
+        <h2 class="text-center">Tez-tez Verilən Suallar</h2>
+        <div class="faq-accordion">
+            <div class="faq-item">
+                <button class="faq-question">Çatdırılma neçə günə həyata keçirilir? <i class="fa-solid fa-chevron-down"></i></button>
+                <div class="faq-answer"><p>Bakı şəhəri daxilində çatdırılma eyni gün ərzində, bölgələrə isə 1-3 iş günü ərzində tam təhlükəsiz çatdırılır.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Məhsullara zəmanət verilirmi? <i class="fa-solid fa-chevron-down"></i></button>
+                <div class="faq-answer"><p>Bəli, bütün məhsullarımıza 1 ildən 3 ilə qədər rəsmi zəmanət verilir.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CART DRAWER -->
+    <div class="cart-drawer" id="cart-drawer">
+        <div class="cart-header">
+            <h3>Səbətiniz (<span id="drawer-cart-count">0</span>)</h3>
+            <button id="close-cart-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="cart-items" id="cart-items-container"></div>
+        <div class="cart-footer">
+            <div class="promo-code-wrap">
+                <input type="text" id="promo-input" placeholder="Promo kod (məs: SUPER30)">
+                <button type="button" id="apply-promo-btn">Tətbiq et</button>
+            </div>
+            <div class="cart-summary-line">
+                <span>Cəmi:</span>
+                <span id="cart-subtotal">0.00 AZN</span>
+            </div>
+            <div class="cart-summary-line discount-line hidden" id="discount-row">
+                <span>Endirim (30%):</span>
+                <span id="cart-discount">-0.00 AZN</span>
+            </div>
+            <div class="cart-summary-line total-line">
+                <span>Yekun:</span>
+                <span id="cart-total-price">0.00 AZN</span>
+            </div>
+            <button class="btn-checkout" id="open-checkout-modal-btn">Sifarişi Tamamla</button>
+        </div>
+    </div>
+
+    <!-- QUICK VIEW MODAL -->
+    <div class="modal" id="quick-view-modal">
+        <div class="modal-content modal-lg">
+            <button class="modal-close" id="close-quickview-btn"><i class="fa-solid fa-xmark"></i></button>
+            <div id="quickview-body-content"></div>
+        </div>
+    </div>
+
+    <!-- CHECKOUT MODAL -->
+    <div class="modal" id="checkout-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="close-checkout-btn"><i class="fa-solid fa-xmark"></i></button>
+            <h2>Sifarişin Rəsmiləşdirilməsi</h2>
+            <form id="checkout-form">
+                <div class="form-group">
+                    <label>Ad və Soyad *</label>
+                    <input type="text" required placeholder="Əli Əliyev">
+                </div>
+                <div class="form-group">
+                    <label>Telefon *</label>
+                    <input type="tel" required placeholder="+994 50 000 00 00">
+                </div>
+                <div class="form-group">
+                    <label>Ünvan *</label>
+                    <textarea required placeholder="Çatdırılma ünvanı"></textarea>
+                </div>
+                <button type="submit" class="btn-checkout">Təsdiqlə</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- GENERIC LIST MODAL (Wishlist & Compare) -->
+    <div class="modal" id="list-modal">
+        <div class="modal-content modal-lg">
+            <button class="modal-close" id="close-list-modal-btn"><i class="fa-solid fa-xmark"></i></button>
+            <h2 id="list-modal-title">Siyahı</h2>
+            <div id="list-modal-body" style="margin-top:20px;"></div>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <!-- TOAST NOTIFICATIONS -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- FOOTER -->
+    <footer class="main-footer" id="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <a href="#" class="logo">Super<span>Nova</span>.az</a>
+                <p>Azərbaycanın ən böyük və etibarlı texnologiya mağazası.</p>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 SuperNova Hub. Bütün hüquqlar qorunur.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,60 +1,105 @@
-// REAL MOCK PRODUCTS DATA
+// Butun mehsullar
 const products = [
-    { id: 1,
-    title: "MacBook Pro 16' M3 Max",
-    category: "laptop", 
-    price: 3890.00, 
+    { id: 101, 
+    title: "Apple IPhone 14 ", 
+    category: "phone", 
+    price: 1500.00, 
     rating: 4.9, 
     inStock: true, 
-    badge: "Best Seller", 
-    image: "https://tse4.mm.bing.net/th/id/OIF.LbpnVdwoMDcnzFCga8mQ3Q?r=0&rs=1&pid=ImgDetMain&o=7&rm=3", 
-    desc: "Maksimal gücə malik professional iş stansiyası." },
-    { id: 2,
-    title: "Sony WH-1000XM5 Noise-Canceling", 
-    category: "audio", 
-    price: 420.00, 
-    rating: 4.8, 
-    inStock: true, 
-    badge: "Endirim", 
-    image: "https://tse4.mm.bing.net/th/id/OIP.kyxA3sH-Fhjwyy4z_tSt3AHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3", 
-    desc: "Kristal təmizliyində səs və küyboğma sistemi." },
-    { id: 3,
-     title: "Apple Watch Series 9 GPS", 
-     category: "wearable", 
-     price: 620.00, 
-     rating: 4.7, 
-     inStock: true, 
-     badge: "Yeni", 
-     image: "https://tse1.mm.bing.net/th/id/OIP.McXAmkEEEsYYAWuDhtl-yAHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3", 
-     desc: "Ağıllı idman və səhhət izləmə köməkçiniz." },
-    { id: 4, 
-    title: "iPhone 15 Pro Max 256GB", 
+    badge: "Top", 
+    image: "https://www.sellcell.com/assets/images/devices/009/iphone-14.jpg", 
+    desc: "Apple" },
+    { id: 102, 
+    title: "Apple IPhone 15", 
     category: "phone", 
-    price: 2450.00, 
+    price: 1900.00, 
+    rating: 4.9, 
+    inStock: true, 
+    badge: "Top", 
+    image: "https://www.sellcell.com/assets/images/devices/009/iphone-15.jpg", 
+    desc: "Apple" },
+    { id: 103, 
+    title: "Apple IPhone 16", 
+    category: "phone", 
+    price: 2100.00, 
+    rating: 4.9, 
+    inStock: true, 
+    badge: "Top", 
+    image: "https://www.sellcell.com/assets/images/devices/009/iphone-16.jpg", 
+    desc: "Apple" },
+    { id: 104, 
+    title: "Apple IPhone 17", 
+    category: "phone", 
+    price: 2800.00, 
+    rating: 4.9, 
+    inStock: true, 
+    badge: "Top", 
+    image: "https://www.sellcell.com/assets/images/devices/009/iphone-17.jpg", 
+    desc: "Apple" },
+    { id: 105, 
+    title: "Apple iPhone 14 Pro Max ", 
+    category: "phone", 
+    price: 2200.00, 
+    rating: 4.9, 
+    inStock: true, 
+    badge: "Top", 
+    image: "https://i5.walmartimages.com/asr/cb8f75e5-1b8e-4c06-9776-0d995a314ada.88ab53492f6fe7e653033585616419b1.jpeg", 
+    desc: "Apple" },
+    { id: 106, 
+    title: "Apple iPhone 15 Pro Max ", 
+    category: "phone", 
+    price: 2500.00, 
     rating: 4.9, 
     inStock: true, 
     badge: "Top", 
     image: "https://mediazone.ma/product/images/14616-BjEtqpue/apple-iphone-15-pro-max-1to-titane-bleu-maroc.webp", 
-    desc: "Titan çərçivə və A17 Pro çipi ilə misilsiz sürət." },
-    { id: 5, 
-    title: "Logitech MX Master 3S Mouse", 
-    category: "laptop", 
-    price: 180.00, 
-    rating: 4.6, 
-    inStock: false, 
-    badge: "Tükəndi", 
-    image: "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=400&q=80", 
-    desc: "Erqonomik dizayn və səssiz klik düymələri." },
-    { id: 6, 
-    title: "Canon EOS R6 Mark II", 
-    category: "camera", 
-    price: 3100.00, 
-    rating: 4.8, 
+    desc: "Apple" },
+    { id: 107, 
+    title: "Apple IPhone 16 Pro Max", 
+    category: "phone", 
+    price: 2800.00, 
+    rating: 4.9, 
     inStock: true, 
-    badge: "Pro", 
-    image: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=400&q=80", 
-    desc: "Peşəkar fotoqraflar üçün 4K kamera." },
-    { id: 7, 
+    badge: "Top", 
+    image: "https://www.sellcell.com/assets/images/devices/009/iphone-16-pro-max.jpg", 
+    desc: "Apple" },
+    { id: 108, 
+    title: "Apple IPhone 17 Pro Max", 
+    category: "phone", 
+    price: 3200.00, 
+    rating: 4.9, 
+    inStock: true, 
+    badge: "Top", 
+    image: "https://storage.irshad.az/products/resized/eejixoO48GfFzxGaoWoYHRlAAzjyFK5Di5YIPAPw.png", 
+    desc: "Apple" },
+    { id: 109, 
+    title: "Apple IPhone 18 Pro Max", 
+    category: "phone", 
+    price: 3800.00, 
+    rating: 4.9, 
+    inStock: true, 
+    badge: "Top", 
+    image: "https://www.sellcell.com/assets/images/devices/009/iphone-18-pro-max.jpg", 
+    desc: "Apple" },
+    { id: 201, 
+    title: "Samsung Galaxy S22 Ultra", 
+    category: "phone", 
+    price: 1800.00, 
+    rating: 4.9, 
+    inStock: true, 
+    badge: "Yeni", 
+    image: "https://tse4.mm.bing.net/th/id/OIP.67P4CLNOPwSCPeCvKJ0_gQHaHd?r=0&rs=1&pid=ImgDetMain&o=7&rm=3", 
+    desc: "Samsung" },
+    { id: 202, 
+    title: "Samsung Galaxy S23 Ultra", 
+    category: "phone", 
+    price: 2000.00, 
+    rating: 4.9, 
+    inStock: true, 
+    badge: "Yeni", 
+    image: "https://image-us.samsung.com/us/smartphones/galaxy-s23-ultra/images/gallery/lavender/01-DM3-Lavender-PDP-1600x1200.jpg", 
+    desc: "Samsung" },
+    { id: 203, 
     title: "Samsung Galaxy S24 Ultra", 
     category: "phone", 
     price: 2200.00, 
@@ -62,16 +107,97 @@ const products = [
     inStock: true, 
     badge: "Yeni", 
     image: "https://wizemart.ru/images/item/3a/da/smartfon_samsung_galaxy_s24_ultra-4552479pic.jpeg", 
-    desc: "Galaxy AI imkanları və 200 MP kamera." },
-    { id: 8, 
+    desc: "Samsung" },
+    { id: 204, 
+    title: "Samsung Galaxy S25 Ultra", 
+    category: "phone", 
+    price: 2400.00, 
+    rating: 4.9, 
+    inStock: true, 
+    badge: "Yeni", 
+    image: "https://tse4.mm.bing.net/th/id/OIP.67P4CLNOPwSCPeCvKJ0_gQHaHd?r=0&rs=1&pid=ImgDetMain&o=7&rm=3", 
+    desc: "Samsung" },
+    { id: 205, 
+    title: "Samsung Galaxy S26 Ultra", 
+    category: "phone", 
+    price: 3200.00, 
+    rating: 4.9, 
+    inStock: true, 
+    badge: "Yeni", 
+    image: "https://storage.irshad.az/products/resized/bfabshjspl1o301lLMaRdTI8RFKi5Sk0wTcpohg9.png", 
+    desc: "Samsung" },
+    { id: 111, 
+    title: "Apple Ipad Pro 13 (M4) ", 
+    category: "tablet", 
+    price: 950.00, 
+    rating: 4.9, 
+    inStock: true, 
+    badge: "Top", 
+    image: "https://storage.irshad.az/products/resized/VKOebts2yL2Rwt8IyecQXaD06aNgng1V7sID4dOf.png", 
+    desc: "Apple" },
+    { id: 112, 
+    title: "Apple iPad Pro 12.9-inch", 
+    category: "electronics", 
+    price: 1000.00, 
+    rating: 4.8, 
+    inStock: true, 
+    badge: "Yeni", 
+    image: "https://tse2.mm.bing.net/th/id/OIP.YAS5-3Mvf0mqUQy9uPaNsAHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3", 
+    desc: "Apple" },
+    { id: 301, 
+    title: "Razer Blade 18", 
+    category: "laptop", 
+    price: 4000.00, 
+    rating: 4.9, 
+    inStock: true, 
+    badge: "Top", 
+    image: "https://m.media-amazon.com/images/I/71ZxR9paGGL.jpg", 
+    desc: "Razer" },
+    { id: 302, 
+    title: "Asus ROG Zephyrus G14", 
+    category: "laptop", 
+    price: 2200.00, 
+    rating: 4.8, 
+    inStock: true, 
+    badge: "Top", 
+    image: "https://th.bing.com/th/id/OIP.yBwmTase6Ap4wcZcWwZftAHaHa?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3", 
+    desc: "Asus" },
+    { id: 303, 
+    title: "Lenovo ThinkPad X1", 
+    category: "laptop", 
+    price: 2500.00, 
+    rating: 4.8, 
+    inStock: true, 
+    badge: "Pro", 
+    image: "https://p4-ofp.static.pub/ShareResource/optimized/pdp/thinkpad/thinkpad-x1-series/len101t0108/lenovo-thinkpad-x1-carbon-gen-13-14-intel-series-tn.19e53120c7d322b7.png", 
+    desc: "Lenovo" },
+    { id: 304, 
     title: "Dell XPS 15 Laptop", 
     category: "laptop", 
     price: 2500.00, 
     rating: 4.8, 
     inStock: true, 
     badge: "Top", 
-    image: "https://tse3.mm.bing.net/th/id/OIP.XHjILGRrY3tx-JSrJ6x5NAHaGF?r=0&rs=1&pid=ImgDetMain&o=7&rm=3", 
-    desc: "Ultra incə dizayn və güclü performans." },
+    image: "https://deltastore.az/_next/image?url=https%3A%2F%2Fdeltastoreimages.s3.eu-central-1.amazonaws.com%2FDell-Pro-16-Plus-Laptop-1aCln3.webp&w=640&q=75", 
+    desc: "Dell" },
+    { id: 305,
+    title: "Apple MacBook Pro 16' M3 Max",
+    category: "laptop", 
+    price: 3890.00, 
+    rating: 4.9, 
+    inStock: true, 
+    badge: "Best Seller", 
+    image: "https://tse4.mm.bing.net/th/id/OIF.LbpnVdwoMDcnzFCga8mQ3Q?r=0&rs=1&pid=ImgDetMain&o=7&rm=3", 
+    desc: "Apple" },
+    { id: 306, 
+    title: "HP Spectre x360 14", 
+    category: "laptop", 
+    price: 1800.00, 
+    rating: 4.7, 
+    inStock: true, 
+    badge: "Yeni", 
+    image: "https://nanoreview.net/common/images/laptop/hp-spectre-x360-14-2024-mini.jpeg", 
+    desc: "HP" },
     { id: 10, 
     title: "GoPro HERO12 Black", 
     category: "camera", 
@@ -79,17 +205,17 @@ const products = [
     rating: 4.6, 
     inStock: true, 
     badge: "Yeni", 
-    image: "https://cdn.mos.cms.futurecdn.net/fSBCoaTRLaTBKdQCeio6sn.jpg", 
-    desc: "Ekstremal idman və səyahət üçün ideal." },
+    image: "https://scr.wfcdn.de/26896/GoPro-Hero-12-BLack-1692443502-0-0.jpg", 
+    desc: "GoPro" },
     { id: 11, 
-    title: "Fitbit Charge 6 Fitness Tracker", 
+    title: "Fitbit Charge 6r", 
     category: "wearable", 
     price: 180.00, 
     rating: 4.5, 
     inStock: true, 
     badge: "Endirim", 
-    image: "https://tse3.mm.bing.net/th/id/OIP.ebINt5JW9IV1h_1QdjISzwHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3", 
-    desc: "Səhiyyə və idman izləmə üçün mükəmməl." },
+    image: "https://tse1.mm.bing.net/th/id/OIP.Hg7TdHB9AqhS7xEHRsa7XgHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3", 
+    desc: "Fitbit" },
     // { id: 12, 
     // title: "Nikon Z9 Mirrorless Camera", 
     // category: "camera", 
@@ -106,25 +232,16 @@ const products = [
     rating: 4.7, 
     inStock: true, 
     badge: "Yeni", 
-    image: "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/surface-pro-11th-edition-color-og-twitter-image?scl=1", 
-    desc: "Planşet və laptopun mükəmməl birləşməsi." },
+    image: "https://tse2.mm.bing.net/th/id/OIP.-HSbD-4QV8KyhTiqZebGLwHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3", 
+    desc: "Microsoft" },
     { id: 14, 
-    title: "JBL Charge 6 Portable Speaker", 
+    title: "JBL Charge 6r", 
     category: "audio", price: 150.00, 
     rating: 4.6, 
     inStock: true, 
     badge: "Endirim", 
     image: "https://th.bing.com/th/id/OIP.-hZTQImJ5W11o8EVby42IgHaHa?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3", 
-    desc: "Səs keyfiyyəti və portativlik üçün ideal." },
-    { id: 15, 
-    title: "Razer Blade 18 Gaming Laptop", 
-    category: "laptop", 
-    price: 4000.00, 
-    rating: 4.9, 
-    inStock: true, 
-    badge: "Top", 
-    image: "https://tse3.mm.bing.net/th/id/OIP.5b6l4ZgJ5A_-Vj4jbjQbGQHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3", 
-    desc: "Ən son oyun texnologiyası ilə güclü performans." },
+    desc: "JBL" },
     { id: 16, 
     title: "Apple AirPods Pro 2", 
     category: "audio", 
@@ -132,34 +249,34 @@ const products = [
     rating: 4.8, 
     inStock: true, 
     badge: "Yeni", 
-    image: "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=400&q=80", 
-    desc: "Aktiv səsboğma və şəffaf rejim ilə mükəmməl səs." },
+    image: "https://tse1.mm.bing.net/th/id/OIP.GszA0xq2UCbek56RQ6lcagHaF6?r=0&rs=1&pid=ImgDetMain&o=7&rm=3", 
+    desc: "Apple" },
     { id: 17, 
     title: "Samsung Galaxy Watch 6", 
     category: "wearable", 
     price: 350.00, 
     rating: 4.7, inStock: true, 
     badge: "Yeni", 
-    image: "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=400&q=80", 
-    desc: "Səhiyyə və idman izləmə üçün qabaqcıl ağıllı saat." },
-    { id: 18, 
-    title: "Canon EOS R5 Mirrorless Camera", 
-    category: "camera", 
-    price: 3900.00, 
-    rating: 4.9, 
-    inStock: true, 
-    badge: "Pro", 
-    image: "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=400&q=80", 
-    desc: "8K video və yüksək sürətli çəkiliş üçün ideal." },
-    { id: 19, 
-    title: "Sony Alpha 7 IV Camera", 
-    category: "camera", 
-    price: 2800.00, 
-    rating: 4.8, 
-    inStock: true, 
-    badge: "Yeni", 
-    image: "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=400&q=80", 
-    desc: "Peşəkar fotoqraflar üçün yüksək performanslı kamera." },
+    image: "https://tse1.mm.bing.net/th/id/OIP.zWCvKkgJGAoXgCo5kDULmQHaIz?r=0&rs=1&pid=ImgDetMain&o=7&rm=3", 
+    desc: "Samsung" },
+    // { id: 18, 
+    // title: "Canon EOS R5 Mirrorless Camera", 
+    // category: "camera", 
+    // price: 3900.00, 
+    // rating: 4.9, 
+    // inStock: true, 
+    // badge: "Pro", 
+    // image: "https://tse1.mm.bing.net/th/id/OIP.4ggNZo5NFgmxq_OuuW1T1wHaG9?r=0&rs=1&pid=ImgDetMain&o=7&rm=3", 
+    // desc: "8K video və yüksək sürətli çəkiliş üçün ideal." },
+    // { id: 19, 
+    // title: "Sony Alpha 7 IV Camera", 
+    // category: "camera", 
+    // price: 2800.00, 
+    // rating: 4.8, 
+    // inStock: true, 
+    // badge: "Yeni", 
+    // image: "https://tse4.mm.bing.net/th/id/OIP.HSzOo2ikCznfAKus9vZmaQHaG7?r=0&rs=1&pid=ImgDetMain&o=7&rm=3", 
+    // desc: "Peşəkar fotoqraflar üçün yüksək performanslı kamera." },
     { id: 20, 
     title: "Google Pixel 8 Pro", 
     category: "phone", 
@@ -167,35 +284,17 @@ const products = [
     rating: 4.7, 
     inStock: true, 
     badge: "Yeni", 
-    image: "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=400&q=80", 
-    desc: "Ən son Android təcrübəsi və qabaqcıl kamera texnologiyası." },
-    { id: 21, 
-    title: "Asus ROG Zephyrus G14", 
-    category: "laptop", 
-    price: 2200.00, 
-    rating: 4.8, 
-    inStock: true, 
-    badge: "Top", 
-    image: "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=400&q=80", 
-    desc: "Yüksək performanslı oyun laptopu." },
-    { id: 22, 
-    title: "Bose SoundLink Revolve+", 
-    category: "audio", 
-    price: 200.00, 
-    rating: 4.6, 
-    inStock: true, 
-    badge: "Endirim", 
-    image: "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=400&q=80", 
-    desc: "360 dərəcə səs və portativ dizayn." },
-    { id: 23, 
-    title: "HP Spectre x360 14", 
-    category: "laptop", 
-    price: 1800.00, 
-    rating: 4.7, 
-    inStock: true, 
-    badge: "Yeni", 
-    image: "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=400&q=80", 
-    desc: "2-in-1 dizayn və güclü performans." },
+    image: "https://tse4.mm.bing.net/th/id/OIP.fPfidVm6jfpUwMjlSSCdqwHaFJ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3", 
+    desc: "Google" },
+    // { id: 22, 
+    // title: "Bose SoundLink Revolve+", 
+    // category: "audio", 
+    // price: 200.00, 
+    // rating: 4.6, 
+    // inStock: true, 
+    // badge: "Endirim", 
+    // image: "https://tse1.mm.bing.net/th/id/OIP.htDBOo28yLqBpU6ap7NhVAHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3", 
+    // desc: "360 dərəcə səs və portativ dizayn." },
     { id: 24, 
     title: "OnePlus 12 Pro", 
     category: "phone", 
@@ -203,112 +302,146 @@ const products = [
     rating: 4.7, 
     inStock: true, 
     badge: "Yeni", 
-    image: "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=400&q=80", 
-    desc: "Sürətli performans və qabaqcıl kamera sistemi." },
+    image: "https://th.bing.com/th/id/OIP.uN5mBwzrbp8e59oxl33mbwHaHa?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3", 
+    desc: "OnePlus" },
     { id: 25, 
-    title: "DJI Mavic 3 Drone", 
-    category: "camera", 
+    title: "DJI Mavic 3", 
+    category: "electronics", 
     price: 2200.00, 
     rating: 4.8, 
     inStock: true, 
     badge: "Pro", 
-    image: "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=400&q=80", 
-    desc: "Hava çəkilişi üçün qabaqcıl dron." },
+    image: "https://tse1.mm.bing.net/th/id/OIP.Zha3JEm1WZG4B5KHySpMogHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3", 
+    desc: "DJI" },
+    // { id: 26, 
+    // title: "Roku Streaming Stick 4K", 
+    // category: "electronics", 
+    // price: 50.00, 
+    // rating: 4.5, 
+    // inStock: true, 
+    // badge: "Endirim", 
+    // image: "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=400&q=80", 
+    // desc: "4K HDR axın təcrübəsi üçün kompakt cihaz." },
     { id: 26, 
-    title: "Roku Streaming Stick 4K", 
-    category: "electronics", 
-    price: 50.00, 
-    rating: 4.5, 
-    inStock: true, 
-    badge: "Endirim", 
-    image: "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=400&q=80", 
-    desc: "4K HDR axın təcrübəsi üçün kompakt cihaz." },
-    { id: 27, 
-    title: "Kindle Paperwhite 2024", 
+    title: "Kindle Paperwhite", 
     category: "electronics", 
     price: 140.00, 
     rating: 4.7, 
     inStock: true, 
     badge: "Yeni", 
-    image: "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=400&q=80", 
-    desc: "Gözləri yormayan ekran və suya davamlı dizayn." },
-    { id: 28, 
-    title: "Nintendo Switch OLED Model", 
+    image: "https://tse4.mm.bing.net/th/id/OIF.cr8fVThh7jvChJVoEwINgw?r=0&rs=1&pid=ImgDetMain&o=7&rm=3", 
+    desc: "Kindle" },
+    { id: 27, 
+    title: "Nintendo Switch", 
     category: "gaming", 
     price: 350.00, 
     rating: 4.8, 
     inStock: true, 
     badge: "Top", 
-    image: "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=400&q=80", 
-    desc: "Yüksək keyfiyyətli OLED ekran və portativ oyun təcrübəsi." },
-    { id: 29, 
+    image: "https://tse1.mm.bing.net/th/id/OIP.vF87Wy871PJsp3Sxr5ipiwHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3", 
+    desc: "Nintendo" },
+    { id: 28, 
     title: "Xbox Series X", 
     category: "gaming", 
     price: 500.00, 
     rating: 4.9, 
     inStock: true, 
     badge: "Yeni", 
-    image: "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=400&q=80", 
-    desc: "Ən son oyun texnologiyası və güclü performans." },
-    { id: 30, 
-    title: "PlayStation 5 Digital Edition", 
+    image: "https://tse1.mm.bing.net/th/id/OIP.if8cx402zWX-OEWu6_saRAHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3", 
+    desc: "Xbox" },
+    { id: 29, 
+    title: "Sony PlayStation 5 Digital Edition", 
     category: "gaming", 
     price: 400.00, 
     rating: 4.9, 
     inStock: true, 
     badge: "Yeni", 
-    image: "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=400&q=80", 
-    desc: "Yüksək performanslı oyun konsolu və rəqəmsal oyunlar üçün ideal." },
-    { id: 31, 
-    title: "Garmin Fenix 7X Solar", 
+    image: "https://tse2.mm.bing.net/th/id/OIP.ELUlozp_7Bjc-ln0FrGp8wHaHu?r=0&rs=1&pid=ImgDetMain&o=7&rm=3", 
+    desc: "Sony" },
+    { id: 30, 
+    title: "Garmin Fenix 7X", 
     category: "wearable", 
     price: 800.00, 
     rating: 4.8, 
     inStock: true, 
     badge: "Pro", 
-    image: "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=400&q=80", 
-    desc: "Günəş enerjisi ilə işləyən qabaqcıl ağıllı saat." },
-    { id: 32, 
-    title: "Oculus Quest 3 VR Headset", 
+    image: "https://tse1.mm.bing.net/th/id/OIP.5_RorgzxoDUT3K4nVNidBwHaHs?r=0&rs=1&pid=ImgDetMain&o=7&rm=3", 
+    desc: "Garmin" },
+    { id: 31, 
+    title: "Oculus Quest 3", 
     category: "gaming", 
     price: 400.00, 
     rating: 4.7, 
     inStock: true, 
     badge: "Yeni", 
-    image: "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=400&q=80", 
-    desc: "Virtual reallıq təcrübəsi üçün qabaqcıl cihaz." },
-    { id: 33, 
-    title: "Anker PowerCore 26800mAh Power Bank", 
+    image: "https://scale.coolshop-cdn.com/product-media.coolshop-cdn.com/23HW5S/60bf21783a2148128e730172606eef53.jpg/f/oculus-meta-quest-3-128gb-vr-headset.jpg", 
+    desc: "Oculus" },
+    { id: 32, 
+    title: "Anker PowerCore", 
     category: "electronics", 
     price: 70.00, 
     rating: 4.6, 
     inStock: true, 
     badge: "Endirim", 
-    image: "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=400&q=80", 
-    desc: "Yüksək tutumlu və sürətli şarj üçün ideal." },
-    { id: 34, 
+    image: "https://m.media-amazon.com/images/I/61vj2BPDpuL._AC_SL1500_.jpg", 
+    desc: "Anker" },
+    { id: 33, 
     title: "Samsung Galaxy Tab S9", 
     category: "electronics", 
     price: 900.00, 
     rating: 4.8, 
     inStock: true, 
     badge: "Yeni", 
-    image: "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=400&q=80", 
-    desc: "Yüksək performanslı planşet və multimedia təcrübəsi." },
+    image: "https://th.bing.com/th?id=OIF.pcDeq%2bn73i4NIsQZGUIT7w&r=0&rs=1&pid=ImgDetMain&o=7&rm=3", 
+    desc: "Samsung" },
     { id: 35, 
-    title: "Lenovo ThinkPad X1 Carbon Gen 11", 
-    category: "laptop", 
-    price: 2500.00, 
+    title: "Bose QuietComfort 45", 
+    category: "audio", 
+    price: 300.00, 
     rating: 4.8, 
     inStock: true, 
     badge: "Pro", 
-    image: "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=400&q=80", 
-    desc: "Yüksək performanslı və portativ iş laptopu." }
-
-
+    image: "https://tse1.mm.bing.net/th/id/OIP.IgjW4IKMj7s3nHKNHSWrFQHaJz?r=0&rs=1&pid=ImgDetMain&o=7&rm=3", 
+    desc: "Bose" },
+    // { id: 37, 
+    // title: "Canon EOS R6 Mark II", 
+    // category: "camera", 
+    // price: 3100.00, 
+    // rating: 4.8, 
+    // inStock: true, 
+    // badge: "Pro", 
+    // image: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=400&q=80", 
+    // desc: "Peşəkar fotoqraflar üçün 4K kamera." },
+    { id: 39, 
+    title: "Logitech MX Master 3S", 
+    category: "electronics", 
+    price: 180.00, 
+    rating: 4.6, 
+    inStock: false, 
+    badge: "Tükəndi", 
+    image: "https://tse2.mm.bing.net/th/id/OIP.yvAWJSp1L-N1dUp2v7MCsAHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3", 
+    desc: "Logitech" },
+    { id: 2,
+    title: "Sony WH-1000XM5 Noise-Canceling", 
+    category: "audio", 
+    price: 420.00, 
+    rating: 4.8, 
+    inStock: true, 
+    badge: "Endirim", 
+    image: "https://tse4.mm.bing.net/th/id/OIP.kyxA3sH-Fhjwyy4z_tSt3AHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3", 
+    desc: "Kristal təmizliyində səs və küyboğma sistemi." },
+    { id: 3,
+     title: "Apple Watch Series 9 GPS", 
+     category: "wearable", 
+     price: 620.00, 
+     rating: 4.7, 
+     inStock: true, 
+     badge: "Yeni", 
+     image: "https://tse1.mm.bing.net/th/id/OIP.UB4O-BP_Tf37pUMey2_osQHaIn?r=0&rs=1&pid=ImgDetMain&o=7&rm=3", 
+     desc: "Ağıllı idman və səhhət izləmə köməkçiniz." },
 ];
 
-// STATE MANAGEMENT
+// Valyuta
 let cart = [];
 let wishlist = [];
 let compareList = [];
@@ -318,7 +451,7 @@ let currentCurrency = 'AZN';
 const currencyRates = { AZN: 1, USD: 0.59, EUR: 0.54 };
 const currencySymbols = { AZN: '₼', USD: '$', EUR: '€' };
 
-// DOM ELEMENTS
+// DOM 
 const productsGrid = document.getElementById('products-grid');
 const searchInput = document.getElementById('live-search-input');
 const clearSearchBtn = document.getElementById('clear-search-btn');
@@ -329,7 +462,7 @@ const stockOnlyCheckbox = document.getElementById('stock-only-checkbox');
 const cartDrawer = document.getElementById('cart-drawer');
 const overlay = document.getElementById('overlay');
 
-// INITIALIZE APP
+// .....
 document.addEventListener('DOMContentLoaded', () => {
     initApp();
 });
@@ -352,27 +485,27 @@ function getSymbol() {
 function renderProducts() {
     let filtered = [...products];
 
-    // Filter Category
+    // Filter 
     if (activeCategory !== 'all') {
         filtered = filtered.filter(p => p.category === activeCategory);
     }
 
-    // Filter Search Query
+    // Filter Search 
     const query = searchInput.value.toLowerCase().trim();
     if (query) {
         filtered = filtered.filter(p => p.title.toLowerCase().includes(query));
     }
 
-    // Filter Price Range
+    // Filter Price 
     const maxPrice = parseFloat(priceRange.value);
     filtered = filtered.filter(p => p.price <= maxPrice);
 
-    // Filter Stock Only
+    // Filter Stock 
     if (stockOnlyCheckbox.checked) {
         filtered = filtered.filter(p => p.inStock);
     }
 
-    // Sort
+    // Siralama
     const sortVal = sortSelect.value;
     if (sortVal === 'price-low') filtered.sort((a, b) => a.price - b.price);
     if (sortVal === 'price-high') filtered.sort((a, b) => b.price - a.price);
@@ -412,7 +545,7 @@ function renderProducts() {
     });
 }
 
-// CART ACTIONS
+// .....
 function addToCart(id) {
     const p = products.find(prod => prod.id === id);
     if (!p.inStock) {
@@ -477,7 +610,7 @@ function removeFromCart(id) {
     updateCart();
 }
 
-// WISHLIST & COMPARE ACTIONS
+// .....
 function toggleWishlist(id) {
     if (wishlist.includes(id)) {
         wishlist = wishlist.filter(wId => wId !== id);
@@ -506,7 +639,7 @@ function toggleCompare(id) {
     renderProducts();
 }
 
-// OPEN MODAL FOR WISHLIST & COMPARE
+// .....
 function openListModal(type) {
     const modalBody = document.getElementById('list-modal-body');
     const modalTitle = document.getElementById('list-modal-title');
@@ -542,7 +675,7 @@ function openListModal(type) {
     overlay.classList.add('active');
 }
 
-// QUICK VIEW MODAL
+// Quick wiew
 function openQuickView(id) {
     const p = products.find(prod => prod.id === id);
     const body = document.getElementById('quickview-body-content');
@@ -562,14 +695,28 @@ function openQuickView(id) {
     document.getElementById('quick-view-modal').classList.add('active');
     overlay.classList.add('active');
 }
+function getFilteredProducts() {
+    //.....
+    let filtered = [...products]; 
 
-// EVENT LISTENERS
+    const query = searchInput.value.toLowerCase().trim();
+
+    if (query) {
+        filtered = filtered.filter(p => 
+            p.title.toLowerCase().includes(query) || 
+            p.desc.toLowerCase().includes(query) 
+        );
+    }
+
+    return filtered;
+}
+
+// .....
 function setupEventListeners() {
     // Live Search
     searchInput.addEventListener('input', () => {
-        clearSearchBtn.classList.toggle('hidden', !searchInput.value);
-        renderProducts();
-    });
+    renderProducts(getFilteredProducts());
+});
 
     clearSearchBtn.addEventListener('click', () => {
         searchInput.value = '';
@@ -577,7 +724,7 @@ function setupEventListeners() {
         renderProducts();
     });
 
-    // Keyboard '/' search focus
+    // '/' shortcut
     window.addEventListener('keydown', (e) => {
         if (e.key === '/' && document.activeElement !== searchInput) {
             e.preventDefault();
@@ -591,11 +738,11 @@ function setupEventListeners() {
         renderProducts();
     });
 
-    // Stock & Sort Filters
+    // Stock & Sort Filter
     stockOnlyCheckbox.addEventListener('change', renderProducts);
     sortSelect.addEventListener('change', renderProducts);
 
-    // Category Buttons
+    // Kataqoriya
     document.querySelectorAll('.cat-filter-btn').forEach(btn => {
         btn.addEventListener('click', (e) => {
             document.querySelectorAll('.cat-filter-btn').forEach(b => b.classList.remove('active'));
@@ -605,7 +752,7 @@ function setupEventListeners() {
         });
     });
 
-    // Navigation Category Links
+    // Kataqoriya linkleri
     document.querySelectorAll('.nav-cat-link').forEach(link => {
         link.addEventListener('click', (e) => {
             e.preventDefault();
@@ -751,7 +898,7 @@ function startCountdownTimer() {
         let minutes = Math.floor((duration % 3600) / 60);
         let seconds = Math.floor(duration % 60);
 
-        timerEl.textContent = `${days}d ${hours}saat ${minutes}dək ${seconds}san`;
+        timerEl.textContent = `${days}g ${hours}saat ${minutes}dəq ${seconds}san`;
         if (duration > 0) duration--;
     }, 1000);
 }

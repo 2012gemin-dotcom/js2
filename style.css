@@ -29,13 +29,13 @@ body { background-color: var(--bg-main); color: var(--text-main); transition: va
 .text-center { text-align: center; }
 .hidden { display: none !important; }
 
-/* ANNOUNCEMENT & TOP BAR */
+/* ..... */
 .announcement-bar { background: linear-gradient(90deg, #4f46e5, #06b6d4); color: white; font-size: 13px; padding: 8px 0; }
 .top-bar { background-color: var(--bg-card); border-bottom: 1px solid var(--border); padding: 8px 0; font-size: 13px; color: var(--text-muted); }
 .top-bar-right { display: flex; align-items: center; gap: 15px; }
 .icon-btn-simple { background: none; border: none; color: var(--text-main); cursor: pointer; font-size: 16px; }
 
-/* HEADER */
+/* ..... */
 .main-header { padding: 20px 0; border-bottom: 1px solid var(--border); }
 .header-container { display: flex; align-items: center; gap: 30px; justify-content: space-between; }
 .logo { font-size: 28px; font-weight: 800; color: var(--text-main); text-decoration: none; }
@@ -52,7 +52,7 @@ body { background-color: var(--bg-main); color: var(--text-main); transition: va
 .action-btn:hover { border-color: var(--primary); color: var(--primary); }
 .badge { position: absolute; top: -5px; right: -5px; background-color: var(--primary); color: white; font-size: 11px; width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
 
-/* NAV */
+/* ..... */
 .main-nav { border-bottom: 1px solid var(--border); background-color: var(--bg-main); }
 .nav-container { display: flex; align-items: center; justify-content: space-between; }
 .all-departments { position: relative; }
@@ -65,7 +65,7 @@ body { background-color: var(--bg-main); color: var(--text-main); transition: va
 .nav-links a { text-decoration: none; color: var(--text-main); font-weight: 600; }
 .nav-links a.active, .nav-links a:hover { color: var(--primary); }
 
-/* HERO */
+/* ..... */
 .hero-section { padding: 30px 0; }
 .hero-slider { background: linear-gradient(135deg, #312e81, #4f46e5); border-radius: 20px; overflow: hidden; color: white; padding: 50px; }
 .slide { display: flex; align-items: center; justify-content: space-between; }
@@ -73,7 +73,7 @@ body { background-color: var(--bg-main); color: var(--text-main); transition: va
 .slide-content h1 { font-size: 38px; margin: 15px 0; }
 .btn-primary { background: white; color: var(--primary); padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 700; display: inline-block; }
 
-/* CATALOG */
+/* ..... */
 .section-title-wrap { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
 .catalog-layout { display: grid; grid-template-columns: 260px 1fr; gap: 30px; }
 .filter-card { background-color: var(--bg-card); border: 1px solid var(--border); padding: 20px; border-radius: 12px; }
@@ -85,7 +85,7 @@ body { background-color: var(--bg-main); color: var(--text-main); transition: va
 .price-values { display: flex; justify-content: space-between; font-weight: 600; margin-top: 5px; }
 .btn-reset-filters { width: 100%; padding: 10px; background: none; border: 1px dashed var(--border); color: var(--text-main); cursor: pointer; border-radius: 6px; }
 
-/* PRODUCTS */
+/* ..... */
 .sorting-bar { display: flex; justify-content: flex-end; align-items: center; margin-bottom: 20px; gap: 10px; }
 .sorting-bar select { padding: 8px; border-radius: 6px; border: 1px solid var(--border); background: var(--bg-card); color: var(--text-main); }
 .products-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; }
@@ -101,7 +101,7 @@ body { background-color: var(--bg-main); color: var(--text-main); transition: va
 .btn-add-cart { background-color: var(--primary); color: white; border: none; border-radius: 6px; font-weight: 600; cursor: pointer; padding: 8px; }
 .btn-icon-secondary { background: var(--bg-main); border: 1px solid var(--border); color: var(--text-main); border-radius: 6px; cursor: pointer; }
 
-/* FAQ */
+/* ..... */
 .faq-section { margin: 60px auto; }
 .faq-accordion { max-width: 700px; margin: 20px auto 0; }
 .faq-item { border: 1px solid var(--border); margin-bottom: 10px; border-radius: 8px; overflow: hidden; }
@@ -109,7 +109,7 @@ body { background-color: var(--bg-main); color: var(--text-main); transition: va
 .faq-answer { padding: 0 15px; max-height: 0; overflow: hidden; transition: max-height 0.3s ease, padding 0.3s ease; background: var(--bg-main); }
 .faq-item.active .faq-answer { padding: 15px; max-height: 200px; }
 
-/* CART DRAWER */
+/* ..... */
 .cart-drawer { position: fixed; top: 0; right: -400px; width: 380px; height: 100%; background-color: var(--bg-main); box-shadow: var(--shadow); z-index: 1000; transition: right 0.4s ease; display: flex; flex-direction: column; }
 .cart-drawer.open { right: 0; }
 .cart-header { padding: 20px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; }
@@ -124,7 +124,7 @@ body { background-color: var(--bg-main); color: var(--text-main); transition: va
 .total-line { font-size: 16px; font-weight: 800; }
 .btn-checkout { width: 100%; padding: 12px; background: var(--primary); color: white; border: none; border-radius: 8px; font-weight: 700; cursor: pointer; margin-top: 10px; }
 
-/* MODALS */
+/* ..... */
 .overlay { position: fixed; inset: 0; background: rgba(0, 0, 0, 0.6); z-index: 999; display: none; }
 .overlay.active { display: block; }
 .modal { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: var(--bg-main); border-radius: 12px; z-index: 1001; display: none; padding: 25px; max-width: 500px; width: 90%; }
@@ -135,9 +135,9 @@ body { background-color: var(--bg-main); color: var(--text-main); transition: va
 .form-group label { display: block; margin-bottom: 5px; font-weight: 600; }
 .form-group input, .form-group textarea { width: 100%; padding: 10px; border: 1px solid var(--border); border-radius: 6px; background: var(--bg-card); color: var(--text-main); }
 
-/* TOAST */
+/* ..... */
 .toast-container { position: fixed; bottom: 20px; right: 20px; z-index: 2000; }
 .toast { background: #10b981; color: white; padding: 10px 18px; border-radius: 8px; margin-top: 8px; box-shadow: var(--shadow); font-weight: 600; font-size: 14px; }
 
-/* FOOTER */
+/* ..... */
 .main-footer { background-color: var(--bg-card); border-top: 1px solid var(--border); padding: 40px 0 20px; margin-top: 60px; }

@@ -10,85 +10,7 @@
     --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
     --transition: all 0.3s ease;
 }
-/* ==========================================
-   MOBİL VƏ TABLET ÜÇÜN RESPONSIVE TƏNZİMLƏMƏLƏR
-   ========================================== */
 
-@media (max-width: 768px) {
-    /* 1. Konteynerin kənar boşluqlarını azaldırıq ki, ekranı düz doldursun */
-    .container {
-        padding-left: 15px !important;
-        padding-right: 15px !important;
-        max-width: 100% !important;
-    }
-
-    /* 2. Məhsul grid sistemini telefonda 2 sütun edirik */
-    .products-grid {
-        grid-template-columns: repeat(2, 1fr) !important;
-        gap: 12px !important;
-    }
-
-    /* 3. Məhsul kartlarının daxili görünüşünü səliqəyə salırıq */
-    .product-card {
-        padding: 10px !important;
-    }
-
-    .product-card img {
-        height: 140px !important; /* Şəkillərin hündürlüyünü telefona uyğunlaşdırırıq */
-        object-fit: cover;
-    }
-
-    /* 4. Axtarış inputunu tam ekran eninə edirik */
-    .search-box {
-        width: 100% !important;
-        margin: 10px 0 !important;
-    }
-
-    #search-input {
-        width: 100% !important;
-        box-sizing: border-box;
-    }
-
-    /* 5. Böyük başlıqları kiçildirik ki, ekrana sığsın */
-    h1 {
-        font-size: 36px !important;
-    }
-    
-    h2 {
-        font-size: 30px !important;
-    }
-}
-
-/* Çox kiçik ekranlı telefonlar üçün (məsələn, 480px və aşağı) */
-@media (max-width: 480px) {
-    .products-grid {
-        grid-template-columns: 1fr !important; /* Hər sətirdө tək məhsul göstərir */
-    }
-    /* 1. Səhifənin sağa-sola sürüşməsinin və daşmasının qarşısını alır */
-html, body {
-    overflow-x: hidden !important;
-    width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
-/* 2. Bütün elementlərin ekran ölçüsündən böyük olmasının qarşısını alır */
-* {
-    box-sizing: border-box !important;
-}
-
-/* 3. Telefonda bütün konteyner və bölmələri tam ekran eninə uyğunlaşdırır */
-@media (max-width: 768px) {
-    .container, header, footer, section, div {
-        max-width: 100% !important;
-    }
-    
-    /* Yuxarıdakı naviqasiya və menyu hissəsinin səliqəyə salınması */
-    header {
-        width: 100% !important;
-    }
-}
-}
 [data-theme="dark"] {
     --bg-main: #0f172a;
     --bg-card: #1e293b;
@@ -219,3 +141,91 @@ body { background-color: var(--bg-main); color: var(--text-main); transition: va
 
 /* ..... */
 .main-footer { background-color: var(--bg-card); border-top: 1px solid var(--border); padding: 40px 0 20px; margin-top: 60px; }
+/* ==========================================
+   BYTECORE - TƏMİZ VƏ DƏQİQ MOBİL RESPONSİVE KODU
+   ========================================== */
+
+@media (max-width: 768px) {
+    /* 1. Səhifənin sağa-sola sürüşməsinin qarşısını alır */
+    html, body {
+        overflow-x: hidden !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        box-sizing: border-box !important;
+    }
+
+    *, *:before, *:after {
+        box-sizing: border-box !important;
+    }
+
+    /* 2. Ana konteyner və main hissəsini alt-alta (flex-column) edirik */
+    main, .container, .catalog-container, .shop-container {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        margin: 0 !important;
+    }
+
+    /* 3. Sol tərəfdəki filtr panelini tam enə oturdub yuxarıya salırıq */
+    aside, .filter-section, .filters {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-bottom: 15px !important;
+    }
+
+    /* 4. Məhsul şəbəkəsini (grid) filtrlərin altına salıb 2 sütun edirik */
+    #products-grid, .products-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 10px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* 5. Məhsul kartlarının və şəkillərin ekrana tam oturması */
+    .product-card {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 8px !important;
+    }
+
+    .product-card img {
+        width: 100% !important;
+        height: 130px !important;
+        object-fit: cover !important;
+    }
+}
+
+/* Çox kiçik ekranlar üçün (480px və aşağı) məhsullar tək sütun olsun */
+@media (max-width: 480px) {
+    #products-grid, .products-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
+@media (max-width: 768px) {
+    .catalog-layout {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+    }
+}
+@media (max-width: 768px) {
+    .product-card img {
+        width: 100% !important;
+        height: 140px !important;
+        object-fit: contain !important; /* Şəklin kəsilmədən kartın içinə tam oturmasını təmin edir */
+    }
+}
+@media (max-width: 768px) {
+    .announcement-bar {
+        padding-top: 4px !important;
+        padding-bottom: 4px !important;
+        font-size: 12px !important;
+    }
+}

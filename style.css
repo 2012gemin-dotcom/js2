@@ -10,7 +10,25 @@
     --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
     --transition: all 0.3s ease;
 }
+@media (max-width: 768px) {
+    
+    .products-grid {
+        gap: 15px;
+    }
 
+    h1 {
+        font-size: 24px;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .products-grid {
+    }
+}
 [data-theme="dark"] {
     --bg-main: #0f172a;
     --bg-card: #1e293b;

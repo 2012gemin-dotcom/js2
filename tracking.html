@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sifarişi İzlə | ByteCore Premium Web Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .track-container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        .back-link { text-decoration: none; color: #312e81; font-weight: 600; display: inline-flex; align-items: center; gap: 8px; margin-bottom: 20px; }
+        .track-header { background: linear-gradient(135deg, #312e81, #4D1821); color: white; padding: 40px 25px; border-radius: 20px; text-align: center; margin-bottom: 30px; }
+        .track-header h1 { font-size: 30px; margin-bottom: 10px; }
+        
+        .search-box { display: flex; max-width: 500px; margin: 20px auto 0; gap: 10px; }
+        .search-box input { flex: 1; padding: 14px 18px; border-radius: 12px; border: none; font-size: 15px; outline: none; }
+        .search-box button { background: #e11d48; color: white; border: none; padding: 0 25px; border-radius: 12px; font-weight: bold; cursor: pointer; transition: 0.2s; }
+        .search-box button:hover { background: #be123c; }
+
+        .status-card { background: #fff; padding: 35px; border-radius: 20px; box-shadow: 0 6px 20px rgba(0,0,0,0.06); border: 1px solid #eee; display: none; }
+        .order-meta { display: flex; justify-content: space-between; border-bottom: 1px solid #eee; padding-bottom: 15px; margin-bottom: 30px; flex-wrap: wrap; gap: 10px; }
+        .order-meta span { font-size: 14px; color: #555; }
+        .order-meta strong { color: #1e1b4b; }
+
+        .steps { display: flex; justify-content: space-between; position: relative; margin: 20px 0; }
+        .steps::before { content: ""; position: absolute; top: 22px; left: 10%; right: 10%; height: 4px; background: #e5e7eb; z-index: 1; }
+        .step { position: relative; z-index: 2; text-align: center; width: 25%; }
+        .step-icon { width: 48px; height: 48px; border-radius: 50%; background: #e5e7eb; color: #6b7280; display: flex; align-items: center; justify-content: center; margin: 0 auto 10px; font-size: 18px; transition: 0.3s; }
+        .step.done .step-icon { background: #312e81; color: white; box-shadow: 0 4px 12px rgba(49, 46, 129, 0.3); }
+        .step.active .step-icon { background: #e11d48; color: white; animation: pulse 1.5s infinite; }
+        .step p { font-size: 13px; font-weight: 600; color: #1e1b4b; }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(225, 29, 72, 0.5); }
+            70% { box-shadow: 0 0 0 12px rgba(225, 29, 72, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(225, 29, 72, 0); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="track-container">
+        <a href="index.html" class="back-link">
+            <i class="fa-solid fa-arrow-left"></i> Ana Səhifəyə Qayıt
+        </a>
+
+        <div class="track-header">
+            <h1>Sifarişini İzlə</h1>
+            <p style="opacity: 0.9; font-size: 14px;">Sifariş kodunu daxil et (Nümunə: <strong>BC-2026</strong>)</p>
+            <div class="search-box">
+                <input type="text" id="order-code" placeholder="Sifariş kodu..." value="BC-2026">
+                <button onclick="trackOrder()">Yoxla</button>
+            </div>
+        </div>
+
+        <div class="status-card" id="status-card">
+            <div class="order-meta">
+                <span>Sifariş Kodu: <strong id="display-code">BC-2026</strong></span>
+                <span>Təxmini Çatdırılma: <strong>Bu gün, 18:00 - 20:00</strong></span>
+                <span>Kuryer: <strong>Rəşad M. (+994 50 777 88 99)</strong></span>
+            </div>
+
+            <div class="steps">
+                <div class="step done">
+                    <div class="step-icon"><i class="fa-solid fa-check"></i></div>
+                    <p>Sifariş Qəbul Edildi</p>
+                </div>
+                <div class="step done">
+                    <div class="step-icon"><i class="fa-solid fa-box-open"></i></div>
+                    <p>Paketləndi</p>
+                </div>
+                <div class="step active">
+                    <div class="step-icon"><i class="fa-solid fa-motorcycle"></i></div>
+                    <p>Kuryer Yoldadır</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon"><i class="fa-solid fa-house-circle-check"></i></div>
+                    <p>Təhvil Verildi</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function trackOrder() {
+            const code = document.getElementById('order-code').value.trim();
+            if (!code) {
+                alert('Zəhmət olmasa sifariş kodunu yazın!');
+                return;
+            }
+            document.getElementById('display-code').innerText = code.toUpperCase();
+            document.getElementById('status-card').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Əlaqə | ByteCore Premium Web Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .page-container { max-width: 1200px; margin: 20px auto; padding: 0 20px; }
+        .back-link { text-decoration: none; color: #312e81; font-weight: 600; display: inline-flex; align-items: center; gap: 8px; margin-bottom: 20px; }
+        .contact-header { background: linear-gradient(135deg, #312e81, #4D1821); color: white; padding: 45px 20px; border-radius: 20px; text-align: center; margin-bottom: 40px; }
+        .contact-wrapper { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; margin-bottom: 50px; }
+        .contact-info, .contact-form { background: #fff; padding: 30px; border-radius: 16px; box-shadow: 0 4px 15px rgba(59, 46, 126, 0.06); border: 1px solid #eee; }
+        .info-item { display: flex; align-items: center; gap: 15px; margin-bottom: 20px; }
+        .info-item i { width: 45px; height: 45px; background: #f3f0ff; color: #3B2E7E; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 18px; }
+        .form-group { margin-bottom: 15px; }
+        .form-group label { display: block; margin-bottom: 6px; font-weight: 600; color: #1e1b4b; font-size: 14px; }
+        .form-group input, .form-group textarea { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-family: inherit; box-sizing: border-box; }
+        .form-group input:focus, .form-group textarea:focus { outline: none; border-color: #3B2E7E; }
+    </style>
+</head>
+<body>
+
+    <div class="page-container">
+        <a href="index.html" class="back-link">
+            <i class="fa-solid fa-arrow-left"></i> Ana Səhifəyə Qayıt
+        </a>
+
+        <section class="contact-header">
+            <h1>Bizimlə Əlaqə</h1>
+            <p>Suallarınız və ya sifarişlə bağlı müraciətləriniz üçün bizə yaza bilərsiniz.</p>
+        </section>
+
+        <div class="contact-wrapper">
+            <!-- Əlaqə Məlumatları -->
+            <div class="contact-info">
+                <h2 style="margin-bottom: 20px; color: #1e1b4b;">Əlaqə Vasitələri</h2>
+                
+                <div class="info-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <strong>Ünvan:</strong>
+                        <p style="color: #555; font-size: 14px;">Bakı şəhəri, Nizami küçəsi 45</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <strong>Telefon:</strong>
+                        <p style="color: #555; font-size: 14px;">+994 50 677 45 58</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <strong>E-poçt:</strong>
+                        <p style="color: #555; font-size: 14px;">enterprice@bytecore.az</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fa-solid fa-clock"></i>
+                    <div>
+                        <strong>İş saatları:</strong>
+                        <p style="color: #555; font-size: 14px;">Hər gün: 10:00 – 21:00</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mesaj Göndərmə Formu -->
+            <div class="contact-form">
+                <h2 style="margin-bottom: 20px; color: #1e1b4b;">Mesaj Göndərin</h2>
+                <form onsubmit="event.preventDefault(); alert('Mesajınız uğurla göndərildi!');">
+                    <div class="form-group">
+                        <label>Adınız və Soyadınız</label>
+                        <input type="text" placeholder="Məsələn: Əli Məmmədov" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Telefon və ya E-poçt</label>
+                        <input type="text" placeholder="+994 50 000 00 00" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Mesajınız</label>
+                        <textarea rows="4" placeholder="Sualınızı bura yazın..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary" style="border: none; cursor: pointer; color: #fff; background: #312e81; width: 100%;"><strong>Göndər</strong></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

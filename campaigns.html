@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kampaniyalar | ByteCore Premium Web Store</title>
+    <!-- Mövcud stil faylını bura qoşuruq -->
+    <link rel="stylesheet" href="style.css">
+    <!-- İkonlar üçün Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Kampaniyalar səhifəsinə özəl əlavə stillər */
+        .campaigns-header {
+            background: linear-gradient(135deg, #312e81, #4D1821);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+            border-radius: 20px;
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+        .campaigns-header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .campaigns-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .campaign-card {
+            background: #ffffff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+            border: 1px solid #eee;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .campaign-card:hover {
+            transform: translateY(-5px);
+        }
+        .campaign-banner {
+            background: linear-gradient(100deg, #312e81, #3B2E7E);
+            color: white;
+            padding: 30px 20px;
+            position: relative;
+        }
+        .campaign-badge {
+            background: #e11d48;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+        .campaign-body {
+            padding: 20px;
+        }
+        .campaign-body h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #1e1b4b;
+        }
+        .campaign-body p {
+            color: #555;
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        .campaign-footer {
+            padding: 0 20px 20px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .campaign-date {
+            font-size: 12px;
+            color: #888;
+        }
+        .back-nav {
+            max-width: 1200px;
+            margin: 20px auto 0;
+            padding: 0 20px;
+        }
+        .back-link {
+            text-decoration: none;
+            color: #312e81;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Ana səhifəyə qayıtmaq üçün yuxarı keçid -->
+    <div class="back-nav">
+        <a href="index.html" class="back-link">
+            <i class="fa-solid fa-arrow-left"></i> Ana Səhifəyə Qayıt
+        </a>
+    </div>
+
+    <!-- Səhifə Başlığı -->
+    <section class="campaigns-header">
+        <h1>Xüsusi Kampaniyalar və Endirimlər</h1>
+        <p>Ən son texnologiya məhsullarını sərfəli şərtlərlə əldə et!</p>
+    </section>
+
+    <!-- Kampaniya Kartları -->
+    <section class="campaigns-grid">
+
+        <!-- 1-ci Kampaniya: iPhone 18 Pro Max -->
+        <div class="campaign-card">
+            <div>
+                <div class="campaign-banner">
+                    <span class="campaign-badge">İLKİN ÖDƏNİŞSİZ⠀︎︎⠀︎︎ FAİZSİZ⠀︎︎⠀︎︎ KOMİSSİYASIZ</span>
+                    <h2>iPhone 18 Pro Max</h2>
+                    <p>Ayda cəmi 150 ₼</p>
+                </div>
+                <div class="campaign-body">
+                    <h3>Komissiyasız və Faizsiz Təklif</h3>
+                    <p>Yeni nəsil Apple iPhone 18 Pro Max (256GB) modelini ilkin ödəniş etmədən, 18 ayadək faizsiz hissə-hissə ödənişlə əldə edin.</p>
+                </div>
+            </div>
+            <div class="campaign-footer">
+                <span class="campaign-date"><i class="fa-regular fa-clock"></i> Bitir: 30 Noyabr</span>
+                <a href="IPhone.html" class="btn-primary" style="padding: 10px 20px; color: #fff; background: #312e81; font-size: 14px;"><strong>Ətraflı</strong> &rarr;</a>
+            </div>
+        </div>
+
+        <!-- 2-ci Kampaniya: Oyun Konsolları -->
+        <div class="campaign-card">
+            <div>
+                <div class="campaign-banner" style="background: linear-gradient(100deg, #1e1b4b, #4D1821);">
+                    <span class="campaign-badge">GAMING HƏFTƏSİ</span>
+                    <h2>PlayStation 5 & Aksesuarlar</h2>
+                    <p>20%-dək Endirim</p>
+                </div>
+                <div class="campaign-body">
+                    <h3>Oyunçular Üçün Böyük Fürsət</h3>
+                    <p>Seçilmiş oyun konsolları, əlavə DualSense pultları və oyun disklərinə xüsusi endirimlər tətbiq olunur.</p>
+                </div>
+            </div>
+            <div class="campaign-footer">
+                <span class="campaign-date"><i class="fa-regular fa-clock"></i> Bitir: 25 Noyabr</span>
+                <a href="PlayStation.html" class="btn-primary" style="padding: 10px 20px; color: #fff; background: #312e81; font-size: 14px;"><strong>Ətraflı</strong> &rarr;</a>
+            </div>
+        </div>
+
+        <!-- 3-cü Kampaniya: Noutbuklar -->
+        <div class="campaign-card">
+            <div>
+                <div class="campaign-banner" style="background: linear-gradient(100deg, #3B2E7E, #1e1b4b);">
+                    <span class="campaign-badge">HƏDİYYƏLİ</span>
+                    <h2>MacBook və Ultrabuklar</h2>
+                    <p>Çanta + Siçan Hədiyyə</p>
+                </div>
+                <div class="campaign-body">
+                    <h3>İş və Təhsil Üçün İdeal Seçim</h3>
+                    <p>İstənilən noutbuk alışında orijinal daşıma çantası və simsiz siçan mağazamız tərəfindən hədiyyə olunur.</p>
+                </div>
+            </div>
+            <div class="campaign-footer">
+                <span class="campaign-date"><i class="fa-regular fa-clock"></i> Müddətsiz</span>
+                <a href="MacBook.html" class="btn-primary" style="padding: 10px 20px; color: #fff; background: #312e81; font-size: 14px;"><strong>Ətraflı</strong> &rarr;</a>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+</html>

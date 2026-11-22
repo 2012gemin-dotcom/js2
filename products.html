@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple iPhone 18 Pro Max | ByteCore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .product-container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .back-link {
+            text-decoration: none;
+            color: #312e81;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 25px;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 24px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            border: 1px solid #eee;
+        }
+        @media (max-width: 768px) {
+            .product-grid { grid-template-columns: 1fr; }
+        }
+        .product-image-box {
+            background: linear-gradient(135deg, #312e81, #1e1b4b);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+        }
+        .product-image-box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            transition: transform 0.3s ease;
+        }
+        .product-image-box img:hover {
+            transform: scale(1.05);
+        }
+        .badge-new {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: #e11d48;
+            color: white;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .product-details h1 {
+            font-size: 28px;
+            color: #1e1b4b;
+            margin-bottom: 10px;
+        }
+        .product-rating {
+            color: #f59e0b;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+        .product-price {
+            font-size: 32px;
+            font-weight: 800;
+            color: #312e81;
+            margin-bottom: 20px;
+        }
+        .product-desc {
+            color: #555;
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            padding: 15px 0;
+        }
+        .options-group {
+            margin-bottom: 20px;
+        }
+        .options-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+            font-size: 14px;
+        }
+        .option-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .opt-btn {
+            padding: 10px 18px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            background: #fff;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+        .opt-btn.selected, .opt-btn:hover {
+            border-color: #312e81;
+            color: #312e81;
+            background: #f3f0ff;
+        }
+        .add-to-cart-btn {
+            width: 100%;
+            background: linear-gradient(135deg, #312e81, #4D1821);
+            color: white;
+            border: none;
+            padding: 15px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: opacity 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .add-to-cart-btn:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="product-container">
+        <a href="index.html" class="back-link">
+            <i class="fa-solid fa-arrow-left"></i> Ana Səhifəyə Qayıt
+        </a>
+
+        <div class="product-grid">
+            <!-- Məhsul Şəkli və Etiket -->
+            <div class="product-image-box">
+                <span class="badge-new">Yeni</span>
+                <img src="https://www.sellcell.com/assets/images/devices/009/iphone-18-pro-max.jpg" alt="Apple iPhone 18 Pro Max">
+            </div>
+
+            <!-- Məhsul Məlumatları -->
+            <div class="product-details">
+                <h1>Apple iPhone 18 Pro Max</h1>
+                <div class="product-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span style="color: #666; margin-left: 5px;">(4.9 / 128 rəy)</span>
+                </div>
+                
+                <div class="product-price">3800.00 ₼</div>
+
+                <div class="product-desc">
+                    <p><strong>Brend:</strong> Apple</p>
+                    <p>İnnovativ dizayn, super güclü prosessor və peşəkar kamera sistemi ilə təchiz olunmuş ən son nəsil flaqman smartfon.</p>
+                </div>
+
+                <!-- Yaddaş Seçimi (İnteraktiv görünüş) -->
+                <div class="options-group">
+                    <label>Yaddaş həcmi:</label>
+                    <div class="option-buttons">
+                        <button class="opt-btn">128GB</button>
+                        <button class="opt-btn selected">256GB</button>
+                        <button class="opt-btn">512GB</button>
+                    </div>
+                </div>
+
+                <!-- Səbətə At Düyməsi -->
+                <button class="add-to-cart-btn" onclick="addToCart()">
+                    <i class="fa-solid fa-cart-shopping"></i> Səbətə Əlavə Et
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function addToCart() {
+            alert('Uğurlu! Apple iPhone 18 Pro Max səbətinizə əlavə olundu 🛒');
+        }
+    </script>
+
+</body>
+</html>

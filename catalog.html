@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Məhsul Kataloqu | ByteCore Premium Web Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .catalog-container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+        .back-link { text-decoration: none; color: #312e81; font-weight: 600; display: inline-flex; align-items: center; gap: 8px; margin-bottom: 20px; }
+        
+        .catalog-header { background: linear-gradient(135deg, #312e81, #4D1821); color: white; padding: 40px; border-radius: 20px; margin-bottom: 30px; display: flex; justify-content: space-between; align-items: center; }
+        .catalog-header h1 { font-size: 32px; margin-bottom: 8px; }
+
+        .catalog-layout { display: grid; grid-template-columns: 260px 1fr; gap: 30px; }
+        @media (max-width: 768px) { .catalog-layout { grid-template-columns: 1fr; } }
+
+        /* Sol Filtr Paneli */
+        .filter-sidebar { background: #fff; padding: 25px; border-radius: 16px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid #eee; height: fit-content; }
+        .filter-title { font-size: 18px; font-weight: 700; color: #1e1b4b; margin-bottom: 20px; display: flex; align-items: center; gap: 8px; }
+        .filter-group { margin-bottom: 20px; }
+        .filter-group label { display: block; font-weight: 600; color: #333; margin-bottom: 10px; font-size: 14px; }
+        .filter-list { list-style: none; padding: 0; margin: 0; }
+        .filter-list li { margin-bottom: 8px; font-size: 14px; color: #555; cursor: pointer; transition: 0.2s; }
+        .filter-list li:hover { color: #312e81; font-weight: 600; }
+
+        /* Sağ Məhsullar Toru (Grid) */
+        .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+        .product-card { background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid #eee; transition: transform 0.3s ease; display: flex; flex-direction: column; justify-content: space-between; }
+        .product-card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.1); }
+        
+        .p-img-box { background: #f8f9fa; height: 180px; display: flex; align-items: center; justify-content: center; position: relative; color: #312e81; font-size: 50px; }
+        .p-badge { position: absolute; top: 12px; left: 12px; background: #e11d48; color: white; padding: 4px 10px; border-radius: 20px; font-size: 11px; font-weight: bold; }
+        
+        .p-body { padding: 20px; }
+        .p-title { font-size: 16px; font-weight: 700; color: #1e1b4b; margin-bottom: 8px; }
+        .p-price { font-size: 18px; font-weight: 800; color: #312e81; margin-bottom: 15px; }
+        
+        .p-footer { padding: 0 20px 20px 20px; }
+        .buy-btn { display: block; text-align: center; background: #312e81; color: white; text-decoration: none; padding: 10px; border-radius: 8px; font-weight: bold; font-size: 14px; transition: 0.2s; }
+        .buy-btn:hover { background: #4D1821; }
+    </style>
+</head>
+<body>
+
+    <div class="catalog-container">
+        <a href="index.html" class="back-link">
+            <i class="fa-solid fa-arrow-left"></i> Ana Səhifəyə Qayıt
+        </a>
+
+        <div class="catalog-header">
+            <div>
+                <h1>Məhsul Kataloqu</h1>
+                <p style="opacity: 0.9; font-size: 14px;">Bütün kateqoriyalardan ən son texnologiya məhsulları</p>
+            </div>
+            <i class="fa-solid fa-store" style="font-size: 45px; opacity: 0.9;"></i>
+        </div>
+
+        <div class="catalog-layout">
+            <!-- Sol Tərəf: Filtrlər -->
+            <div class="filter-sidebar">
+                <div class="filter-title"><i class="fa-solid fa-filter"></i> Filtrlər</div>
+                
+                <div class="filter-group">
+                    <label>Kateqoriyalar</label>
+                    <ul class="filter-list">
+                        <li><i class="fa-solid fa-angle-right"></i> Bütün Məhsullar</li>
+                        <li><i class="fa-solid fa-angle-right"></i> Smartfonlar</li>
+                        <li><i class="fa-solid fa-angle-right"></i> Noutbuklar</li>
+                        <li><i class="fa-solid fa-angle-right"></i> Oyun Konsolları</li>
+                        <li><i class="fa-solid fa-angle-right"></i> Aksesuarlar</li>
+                    </ul>
+                </div>
+
+                <div class="filter-group">
+                    <label>Qiymət Aralığı</label>
+                    <ul class="filter-list">
+                        <li>0 ₼ - 500 ₼</li>
+                        <li>500 ₼ - 1500 ₼</li>
+                        <li>1500 ₼ - 4000 ₼+</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Sağ Tərəf: Məhsullar -->
+            <div class="products-grid">
+                
+                <!-- Məhsul 1 -->
+                <div class="product-card">
+                    <div>
+                        <div class="p-img-box">
+                            <span class="p-badge">Yeni</span>
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                        </div>
+                        <div class="p-body">
+                            <div class="p-title">iPhone 18 Pro Max</div>
+                            <div class="p-price">3800 ₼</div>
+                        </div>
+                    </div>
+                    <div class="p-footer">
+                        <a href="product.html?id=109" class="buy-btn">Məhsula Bax</a>
+                    </div>
+                </div>
+
+                <!-- Məhsul 2 -->
+                <div class="product-card">
+                    <div>
+                        <div class="p-img-box">
+                            <span class="p-badge" style="background: #312e81;">Endirim</span>
+                            <i class="fa-solid fa-gamepad"></i>
+                        </div>
+                        <div class="p-body">
+                            <div class="p-title">PlayStation 5 Slim</div>
+                            <div class="p-price">1250 ₼</div>
+                        </div>
+                    </div>
+                    <div class="p-footer">
+                        <a href="product.html?id=109" class="buy-btn">Məhsula Bax</a>
+                    </div>
+                </div>
+
+                <!-- Məhsul 3 -->
+                <div class="product-card">
+                    <div>
+                        <div class="p-img-box">
+                            <i class="fa-solid fa-laptop"></i>
+                        </div>
+                        <div class="p-body">
+                            <div class="p-title">MacBook Pro 16"</div>
+                            <div class="p-price">4900 ₼</div>
+                        </div>
+                    </div>
+                    <div class="p-footer">
+                        <a href="product.html?id=109" class="buy-btn">Məhsula Bax</a>
+                    </div>
+                </div>
+
+                <!-- Məhsul 4 -->
+                <div class="product-card">
+                    <div>
+                        <div class="p-img-box">
+                            <i class="fa-solid fa-headphones"></i>
+                        </div>
+                        <div class="p-body">
+                            <div class="p-title">AirPods Pro 2</div>
+                            <div class="p-price">550 ₼</div>
+                        </div>
+                    </div>
+                    <div class="p-footer">
+                        <a href="product.html?id=109" class="buy-btn">Məhsula Bax</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
